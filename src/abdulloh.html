@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+-->
 
 <head>
     <meta charset="UTF-8">
@@ -49,13 +52,426 @@
             </div>
         </div>
     </header>
-    <main class="flex flex-col items-center">
+    <main class="flex flex-col pb-[145px] items-center bg-[#fafafa]">
         <div class="">
             <p class="text-[#828282] text-[12px] mb-[30px] mt-5">Главная страница / Жилое</p>
+            <div class="relative flex gap-[85px] items-center justify-between">
+                <p class="text-[36px]">Каталог жилых строений</p>
+                <img src="img/search.png" class="absolute right-[444px]">
+                <input type="text" placeholder="Поиск по жилым строениям..."
+                    class="py-[17px] border-b-2 w-[471px] pr-[123px] pl-[48px]">
+            </div>
+        </div>
+        <div class="flex ">
             <div class="">
-                <p class="text-[12px] mb-10">Каталог жилых строений</p>
-                <img src="img/search.png" class="absolute">
-                <input type="text" placeholder="Поиск по жилым строениям..." class="relative">
+                <div class="bg-[#fff] items-center rounded-lg gap-[113px] mb-[24px] pt-6 pb-5 px-5 flex">
+                    <p class="">Подкатегория</p>
+                    <img src="img/arrow-up.png">
+                </div>
+                <div class="">
+                    <div class="mb-[30px]">
+                        <p class="mb-[10px] font-bold">Дома и жилые строения</p>
+                        <ul>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Дома</li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Дома из
+                                профилированого бруса</li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Дома из
+                                оцилиндрованого бруса
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Каркасные
+                                дома
+                            </li>
+                            <li class="flex text-[#CB8734] font-bold items-center gap-[15px] mb-[10px]"><img
+                                    src="img/arr-right.png">Дома из блока
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Дачи
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Коттеджи
+
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Виллы
+
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Усадьбы
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Особняки
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mb-[30px]">
+                        <p class="mb-[10px] font-bold">Коммерческие строения</p>
+                        <ul>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Базы отдыха
+
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Гостинницы
+
+
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Рестораны
+
+
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Кафе
+
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Магазины
+
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mb-[41px]">
+                        <p class="mb-[10px] font-bold">Садовые и хоз постройки
+                        </p>
+                        <ul>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Деревянные
+                                бани <br>
+                                из оцилиндрованого бруса</li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Деревянные
+                                бани <br>
+                                из профилированого бруса
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Каркасные
+                                конструкции
+
+                            </li>
+                            <li class="flex text-[#CB8734] font-bold items-center gap-[15px] mb-[10px]"><img
+                                    src="img/arr-right.png">Беседки
+
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Альтанки
+
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Гаражи</li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Кухни
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Детские
+                                игровые
+                                площадки
+
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Деревянные
+                                детские домики
+
+                            </li>
+                            <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Мангальные
+                                зоны
+                                и барбекю
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-10">
+                    <div class="bg-[#fff] items-center rounded-lg gap-[113px] mb-[24px] pt-6 pb-5 px-5 flex">
+                        <p class="">Сортировать по:</p>
+                        <img src="img/arrow-up.png">
+                    </div>
+                    <ul>
+                        <li class="flex items-center font-bold text-[#CB8734] gap-[15px] mb-[10px]"><img
+                                src="img/arr-right.png">Алфавиту
+
+                        </li>
+                        <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Популярности
+                        </li>
+                        <li class="flex items-center gap-[15px] mb-[10px]"><img src="img/arr-right.png">Цене
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <img src="img/1st.png">
+                    <img src="img/2nd.png">
+                </div>
+            </div>
+            <div class="">
+                <div class="mt-[45px] grid grid-cols-3 gap-[30px]">
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/1.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант Z-65 <br> «Bavaria»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">1 000 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/2.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант LX-75 <br>
+                                «JULIA»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">2 350 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/3.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант Z-65 <br> «Bavaria»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">1 000 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/4.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант Z-65 <br> «Bavaria»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">1 000 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/5.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант LX-75 <br>
+                                «JULIA»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">2 350 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/6.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант Z-65 <br> «Bavaria»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">1 000 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/7.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант Z-65 <br> «Bavaria»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">1 000 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/8.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант LX-75 <br>
+                                «JULIA»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">2 350 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/9.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант Z-65 <br> «Bavaria»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">1 000 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/10.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант Z-65 <br> «Bavaria»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">1 000 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/11.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант LX-75 <br>
+                                «JULIA»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">2 350 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-tr-[36px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                        <img src="img/12.png" class="w-[100%]">
+                        <div class="pl-[23px] pr-[17px] pb-[26px]">
+                            <p class="mt-[25px] mb-[15px] text-[20px]">Вариант Z-65 <br> «Bavaria»</p>
+                            <div class="flex items-center gap-[23px] mb-5">
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/left-top.png">
+                                    <p class="text-[14px] font-light">7,5х9 м</p>
+                                </div>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/corners.png">
+                                    <p class="text-[14px] font-light">135 м2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[5px]">
+                                <button
+                                    class="px-[15px] text-[12px] py-[16px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                                <button class="px-[15px] text-[13px] py-[16px] rounded bg-[#FFFBF6] font-bold">1 000 000
+                                    грн</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex mb-[35px] mt-[30px] duration-300 hover:translate-y-[-10px] bg-white hover:shadow-2xl">
+                    <div class="py-[54px] pl-[57px] pr-[42px]">
+                        <p class="text-[30px]">Нет подходящего проекта?</p>
+                        <p class="pt-[15px] pb-[26px] leading-[28px] text-[15px]">Мы разработаем проект индивидуально
+                            <br> под ваш запрос с помощью
+                            3D-макета
+                        </p>
+                        <button
+                            class="w-[280px] text-[12px] pt-[26px] pb-[20px] rounded bg-gradient-to-b from-[#F39C32] to-[#CB8734] text-white font-bold">Ознакомиться</button>
+                    </div>
+                    <img src="img/glass-guy.png">
+                </div>
+                <div class="bg-[#FFFBF6] juce py-[18px] gap-3 rounded-lg flex items-center">
+                    <img src="img/spin.png">
+                    <p class="">Показать еще больше</p>
+                </div>
             </div>
         </div>
     </main>
