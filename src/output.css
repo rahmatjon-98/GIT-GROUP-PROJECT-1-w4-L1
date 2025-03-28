@@ -636,6 +636,10 @@ video {
   z-index: 40;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -773,6 +777,22 @@ video {
   margin-top: 7px;
 }
 
+.mb-\[500px\] {
+  margin-bottom: 500px;
+}
+
+.mb-\[1000px\] {
+  margin-bottom: 1000px;
+}
+
+.mb-\[400px\] {
+  margin-bottom: 400px;
+}
+
+.mb-\[600px\] {
+  margin-bottom: 600px;
+}
+
 .flex {
   display: flex;
 }
@@ -869,6 +889,10 @@ video {
   width: 50px;
 }
 
+.w-\[52\%\] {
+  width: 52%;
+}
+
 .w-\[53px\] {
   width: 53px;
 }
@@ -881,28 +905,28 @@ video {
   width: 800px;
 }
 
-.w-2\/4 {
-  width: 50%;
+.w-\[\] {
+  width: ;
 }
 
-.w-\[60\%\] {
-  width: 60%;
+.w-\[40\%\] {
+  width: 40%;
 }
 
-.w-\[55\%\] {
-  width: 55%;
+.w-\[360px\] {
+  width: 360px;
 }
 
-.w-\[52\%\] {
-  width: 52%;
+.w-auto {
+  width: auto;
 }
 
-.w-\[5\%\] {
-  width: 5%;
+.w-\[320px\] {
+  width: 320px;
 }
 
-.w-\[50\%\] {
-  width: 50%;
+.w-full {
+  width: 100%;
 }
 
 .shrink {
@@ -987,10 +1011,6 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
-}
-
-.gap-14 {
-  gap: 3.5rem;
 }
 
 .gap-16 {
@@ -1079,10 +1099,6 @@ video {
 
 .gap-\[85px\] {
   gap: 85px;
-}
-
-.gap-6 {
-  gap: 1.5rem;
 }
 
 .gap-x-\[30px\] {
@@ -1238,9 +1254,9 @@ video {
   padding: 2.5rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
 }
 
 .px-2 {
@@ -1266,6 +1282,11 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.px-\[10\%\] {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .px-\[15px\] {
@@ -1296,6 +1317,11 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-16 {
@@ -1363,19 +1389,14 @@ video {
   padding-bottom: 60px;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
-.px-11 {
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-10 {
@@ -1528,6 +1549,14 @@ video {
 
 .pt-\[59px\] {
   padding-top: 59px;
+}
+
+.pb-\[\] {
+  padding-bottom: ;
+}
+
+.pb-\[500px\] {
+  padding-bottom: 500px;
 }
 
 .text-center {
@@ -1705,4 +1734,77 @@ video {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:m-0 {
+    margin: 0px;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:w-\[356px\] {
+    width: 356px;
+  }
+
+  .lg\:w-\[320pc\] {
+    width: 320pc;
+  }
+
+  .lg\:w-\[320px\] {
+    width: 320px;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .lg\:gap-16 {
+    gap: 4rem;
+  }
+
+  .lg\:p-0 {
+    padding: 0px;
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:px-\[20\%\] {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:text-\[10px\] {
+    font-size: 10px;
+  }
+
+  .lg\:text-\[13px\] {
+    font-size: 13px;
+  }
+
+  .lg\:text-\[\] {
+    color: ;
+  }
 }
