@@ -717,6 +717,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -767,10 +771,6 @@ video {
 
 .mt-\[7px\] {
   margin-top: 7px;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .flex {
@@ -881,6 +881,30 @@ video {
   width: 800px;
 }
 
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[55\%\] {
+  width: 55%;
+}
+
+.w-\[52\%\] {
+  width: 52%;
+}
+
+.w-\[5\%\] {
+  width: 5%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .shrink {
   flex-shrink: 1;
 }
@@ -963,6 +987,10 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
 }
 
 .gap-16 {
@@ -1051,6 +1079,10 @@ video {
 
 .gap-\[85px\] {
   gap: 85px;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-x-\[30px\] {
@@ -1266,6 +1298,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1324,6 +1361,21 @@ video {
 .py-\[60px\] {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-10 {
